@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+
+<script>
+
+var anoNascimento = Number.parseInt(prompt("Digite o ano de nascimento"));
+
+var idade = (2023 - anoNascimento)
+document.write("você tem " + idade + " anos");
+document.write("<br>");
+
+if(idade < 18){
+document.write( "faltam  " + (18 - idade) + " anos para o alistamento !!!");
+
+} else {
+document.write( "fez o alistamento há " + (idade - 18) + " anos !!!");
+}
+
+</script>

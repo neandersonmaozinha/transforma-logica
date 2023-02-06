@@ -1,0 +1,65 @@
+<meta charset="UTF-8">
+
+<script>
+
+    /*
+    
+Modifique o programa anterior para não aceitar a entrada do número zero, e requisitar a
+digitação de outro número neste caso
+    
+    */
+
+    var array = [];
+    var pares = [];
+    var impares = [];
+    
+
+    for (let i = 0; i < 10; i++) {
+
+        array[i] = Number(prompt("Digite um numero inteiro"));
+
+        switch(array[i]){
+        case 0:
+        array[i] = prompt("Zero é um numero inválido. Favor enviar um número valido");
+        break;
+        default:
+        break;
+
+    
+    }
+        
+        if ((array[i] % 2) == 0) {
+
+            pares.push(array[i]);
+
+        }
+
+        else {
+
+            impares.push(array[i]);
+
+
+        }
+
+    }
+
+    document.write("Numeros pares: ");
+    for (let i = 0; i < pares.length; i++) {
+
+        document.write(pares[i] + ", ");
+    }
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Numeros impares: ")
+
+
+    for (let i = 0; i < impares.length; i++) {
+        document.write(impares[i] + ", ");
+    }
+
+
+
+   
+
+</script>

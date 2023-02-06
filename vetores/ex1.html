@@ -1,0 +1,68 @@
+<meta charset="UTF-8">
+
+<script>
+    
+    /* 
+    Faça um programa que crie preencha um array
+    com seis elementos numéricos inteiros,
+    processar e mostre:
+
+    *Todos os números pares;
+    *A quantidade de números pares;
+    *Todos os números ímpares;
+    *A quantidade de números ímpares
+
+    */
+
+    var array = [];
+    var pares = [];
+    var impares = [];
+    var qtdPares = 0;
+    var qtdImpares = 0;
+
+    //Para i iniciando em 0, enquanto i for menor que 6, faça!
+    for(let i = 0; i < 6; i++){
+
+        //Leia um número e guarde no array na posição que i estiver marcando
+        array[i] = Number(prompt("Digite um numero inteiro"));
+
+        //Se o valor que está na posição marcada em i, quando dividido por 2 der resto zero
+        if( (array[i] % 2) == 0) {
+
+            //Adicione o valor dessa posição no array de pares
+            pares.push(array[i]);
+
+            //Some 1 à qtd de Pares
+            qtdPares++;
+        }
+        //o valor que está na posição marcada em i, quando dividido por 2 não der resto zero
+        else {
+
+            //Adicione o valor dessa posição no array de impares
+            impares.push(array[i]);
+
+            //Some 1 à qtd de Impares
+            qtdImpares++;
+        }
+
+    }
+
+    //Para i iniciando em zero, enquanto i for menor que o tamanho do array de pares, faça
+    for(let i = 0; i < pares.length; i++){
+
+        //Escreva na tela o valor guardado na posição i
+        document.write(pares[i] + ", ");
+    }
+
+    document.write("<br>");
+    document.write("Quantidade de pares: " + qtdPares);
+    document.write("<br><br><br>");
+
+    for(let i = 0; i < impares.length; i++){
+        document.write(impares[i] + ", ");
+    }
+
+    document.write("<br>");
+    document.write("Quantidade de ímpares: " + qtdImpares);
+
+</script>

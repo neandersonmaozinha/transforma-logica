@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+
+    /*
+    14) Faça um algoritmo que leia 20 números e, ao final, escreva quantos estão entre 0 e
+    100, quantos estão entre 101 e 200 e quantos são maiores de 200. 
+    */
+
+    var entre0e100 = 0;
+    var entre101e200 = 0;
+    var acimaDe200 = 0;
+
+
+    for (let i = 0; i < 20; i++) {
+        var numero = Number.parseInt(prompt("informe um número: "));
+
+        if (numero >= 0 && numero <= 100) {
+            entre0e100++
+
+        } else if (numero > 100 && numero < 201) {
+            entre101e200++
+        }
+
+        else {
+            acimaDe200++
+
+        }
+            
+
+    }
+    document.write(entre0e100 + " números estão entre 0 e 100 ")
+    document.write("<br>")
+    document.write("<br>")
+    document.write(entre101e200 + " números estão entre 101 e 200 ")
+    document.write("<br>")
+    document.write("<br>")
+    document.write(acimaDe200 + " números estão acima de 200 ")
+
+
+</script>

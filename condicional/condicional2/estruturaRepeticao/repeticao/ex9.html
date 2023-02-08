@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+    // 9) Leia o nome e a idade de 10 pessoas e exiba o nome da pessoa mais nova. 
+
+    var menorIdade = 0;
+    var idade;
+    var nome;
+    var nomeMenor
+
+
+    for (let i = 0; i < 10; i++) {
+        idade = Number.parseInt(prompt("digite a sua idade: "));
+        nome = prompt("Digite o seu nome");
+
+        if (menorIdade == 0 || idade < menorIdade) {
+            menorIdade = idade;
+            nomeMenor = nome;
+        }
+    }
+    document.write(nomeMenor + " possui a menor idade com: " + menorIdade + " anos ");
+
+
+</script>
